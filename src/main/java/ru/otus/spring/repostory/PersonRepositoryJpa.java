@@ -42,13 +42,4 @@ public class PersonRepositoryJpa implements PersonRepository {
                 Person.class);
         return query.getResultList();
     }
-
-    @Override
-    public Person getByName(String name) {
-        TypedQuery<Person> query = em.createQuery(
-                "select e from Employee e where e.name = :name",
-                Person.class);
-        query.setParameter("name", name);
-        return query.getSingleResult();
-    }
 }
