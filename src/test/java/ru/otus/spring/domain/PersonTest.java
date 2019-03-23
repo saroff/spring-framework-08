@@ -20,9 +20,6 @@ public class PersonTest {
 
     @Test
     public void saveAndGet() {
-        Person person = new Person("Ivan");
-        Person fromDb = em.persistAndFlush(person);
-        assertThat(fromDb.getId()).isNotZero();
-        assertThat(fromDb.getName()).isEqualTo(person.getName());
+        // TODO: add test code here
     }
 }
