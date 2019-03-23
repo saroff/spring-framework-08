@@ -18,11 +18,6 @@ public class PersonRepositoryJpa implements PersonRepository {
     private EntityManager em;
 
     @Override
-    public void insert(Person p) {
-        em.persist(p);
-    }
-
-    @Override
     public Person getById(int id) {
         return em.find(Person.class, id);
     }
