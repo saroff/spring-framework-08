@@ -14,5 +14,5 @@ public interface PersonRepository {
 
     //List<Person> getAll();
 
-    //Person getByName(String name);
+    //List<Person> getByName(String name);
 }
